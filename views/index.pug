@@ -1,0 +1,144 @@
+extends layout
+block content
+  .container
+    .col-12.mt-lg-3
+      #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='/images/c1.webp' alt='...')
+          .carousel-item
+            img.d-block.w-100(src='/images/c2.webp' alt='...')
+          .carousel-item
+            img.d-block.w-100(src='/images/c3.webp' alt='...')
+          .carousel-item
+            img.d-block.w-100(src='/images/c4.webp' alt='...')
+          .carousel-item
+            img.d-block.w-100(src='/images/c5.webp' alt='...')
+        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
+  .top-products#glass
+    .container
+      .col-12
+        h1.h1.text-center Топовые солцезащитные очки
+        .box.d-flex
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki6.jpeg' alt)
+              .card-body
+                h5.card-title Очки Dolce & Gabana
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki2.jpeg' alt)
+              .card-body
+                h5.card-title Ray-Ban
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki7.jpeg' alt)
+              .card-body
+                h5.card-title Versace
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki5.jpeg' alt)
+              .card-body
+                h5.card-title Ray-Ban M19
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+      .col-12
+        h1.h1.text-center Топовые оправы
+        .box.d-flex
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki8.jpeg' alt)
+              .card-body
+                h5.card-title Bottega Veneta
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki9.jpeg' alt)
+              .card-body
+                h5.card-title Persol PO
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki10.jpeg' alt)
+              .card-body
+                h5.card-title Ray-Ban RX
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki11.jpeg' alt)
+              .card-body
+                h5.card-title Silhouette
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+      .col-12
+        h1.h1.text-center Топовые спортивные очки
+        .box.d-flex
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki12.jpeg' alt)
+              .card-body
+                h5.card-title Tommy Hilfiger
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki13.jpeg' alt)
+              .card-body
+                h5.card-title Ray-Ban RB
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki14.jpeg' alt)
+              .card-body
+                h5.card-title Polaroid StaySafe1
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+          .col-lg-3.col-sm-6.mt-sm-4
+            .card
+              img.card-img-top(src='/images/ochki15.jpeg' alt)
+              .card-body
+                h5.card-title Versace VE
+                p.price
+                a.btn.btn-primary(href='#') Подробно
+  .information#information
+    .container
+      .row.justify-content-between
+        h1.h1.text-center Гайды и полезная информация из нашего блога
+        .col-4
+          img.read(src='/images/read1.png' alt)
+          .texts
+            h3.h3 Как подобрать очки по форме лица?
+            p.paragraph Не знаете, что вам идет? Мы подскажем, как выбрать идеальные очки, в которых вы будете выглядеть на миллион.
+            a.bts(href='/read_one') Читать
+        .col-4
+          img.read(src='/images/read2.png' alt)
+          .texts
+            h3.h3 Как выбрать солнцезащитные очки?
+            p.paragraph Расскажем, как сохранить здоровье глаз и предотвратить морщины с помощью правильных солнцезащитных очков.
+            a.bts(href='/read_two') Читать
+        .col-4
+          img.read(src='/images/read3.png' alt)
+          .texts
+            h3.h3 Как правильно выбрать очки для зрения?
+            p.paragraph Самое важное — подобрать очки, которые обеспечат комфорт и хорошее видение. Не знаете как? Мы поможем.
+            a.bts(href='/read_three') Читать
+  .about_company.mt-lg-5.text-center#about
+    .container
+      h1.glav_h1 Оптик Сити
+      p.phraze
+        | ОПТИК СИТИ – это объединение независимых оптических салонов, работающих по системе франчайзинга под единым брендом. Первые из них открылись еще в 2011 году. Оптика, для которой Ташкент стала родным городом, постепенно расширялась и охватила не только столицу, но и Самарканд, а также другие города, например, Фергана.

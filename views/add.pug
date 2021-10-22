@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .container 
+    h1= title
+    form( method="POST" enctype="multipart/form-data")
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Названия продукта
+            if data
+                input.form-control#exampleInputEmail1(type='text' name="title" placeholder="Названия продукта"  value= data.title)
+            else 
+                input.form-control#exampleInputEmail1(type='text' name="title" placeholder="Названия продукта")
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Цена
+            if data
+                input.form-control#exampleInputEmail1(type='number' name="price" placeholder="Цена" value= data.price)
+            else 
+                input.form-control#exampleInputEmail1(type='number' name="price" placeholder="Цена")            
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Размер рамки 
+            if data
+                input.form-control#exampleInputEmail1(type='text' name="size" placeholder="Размер рамки" value= data.size)
+            else 
+                input.form-control#exampleInputEmail1(type='text' name="size" placeholder="Размер рамки")               
+        .mb-3
+            label.form-label(for='exampleInputEmail1') Пол
+            select.form-control(name='gender')
+                option(value='Мужской') Мужской
+                option(value='Женский') Женский
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Подробно о продукте
+            if data
+                textarea(name="comment", cols="30", rows="10").form-control#exampleInputPassword1= data.comment 
+            else 
+                 textarea(name="comment", cols="30", rows="10").form-control#exampleInputPassword1 
+        .mb-3
+            label.form-label(for='exampleInputPassword1') Фотография продукта
+            input(type="file" name="img").form-control#exampleInputPassword1
+        button.btn.btn-primary(type='submit')= btn

@@ -1,0 +1,30 @@
+extends layout
+block content
+ if data
+    .container 
+        h1= title
+        .row 
+            .about_product.d-flex.justify-content-between.mt-lg-3
+                .col-lg-7
+                        .card 
+                            .card-imgs 
+                                img(src= "images/"+ data.img, alt="")
+                .col-lg-5
+                    .card-text 
+                        h3= data.title 
+                        .price_box.d-flex
+                            | Цена :
+                            p.price= data.price 
+                                |  Sum 
+                        .card_size.d-flex 
+                            | Размер рамки :
+                            p.size= data.size
+                        .card_gender.d-flex
+                            | Пол :
+                            p.gender= data.gender
+                    .card-comment.d-flex 
+                        | О продукте : 
+                        p.comment= data.comment
+                    .buttons
+                        a(href="/add/delete/"+data.id class="btn btn-danger") Удалить 
+                        a(href="/add/update/"+data.id class="btn btn-success") Изменить 

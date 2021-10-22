@@ -1,0 +1,11 @@
+extends layout
+block content
+    .container 
+        h1= title
+        form(action="/register"  method='POST')
+            input(type="text" placeholder="Ваш имя" name="names").form-control.mt-3.mb-3 
+            input(type="text" placeholder="Ваш фамилия" name="surname").form-control.mt-3.mb-3 
+            input(type="text" placeholder="Придумайте логин" name="login").form-control.mt-3.mb-3 
+            input(type="password" placeholder="Придумайте пароль" name="password").form-control.mt-3.mb-3 
+            input(type="password" placeholder="Повторите пароль" name="password2").form-control.mt-3.mb-3 
+            button.btn.btn-success Зарегистрироваться  
